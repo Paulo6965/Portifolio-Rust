@@ -1,0 +1,19 @@
+use std::io;
+
+fn main() {
+    let mut input1 = String::new();
+    let mut input2 = String::new();
+
+    println!("Digite o primeiro número:");
+    io::stdin().read_line(&mut input1).expect("Erro");
+
+    println!("Digite o segundo número:");
+    io::stdin().read_line(&mut input2).expect("Erro");
+
+    let n1: i32 = input1.trim().parse().expect("Número inválido");
+    let n2: i32 = input2.trim().parse().expect("Número inválido");
+
+    let soma = n1 + n2;
+
+    println!("A soma é: {}", soma);
+}
