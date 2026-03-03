@@ -1,0 +1,10 @@
+use std::collections::VecDeque;
+fn main(){
+    let mut deque: VecDeque<i32> = VecDeque::new();
+    //inserindo no final
+    deque.push_back(10);
+    deque.push_back(20);
+    //inserindo no inicio
+    deque.push_front(5);
+    println!("{:?}",deque); //Saida [5,10,20]
+}
